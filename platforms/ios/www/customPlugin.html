@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自定义cordova插件的使用</title>
+    <script type="text/javascript" src="cordova.js"></script>
+<script>
+    function testClik() {
+        cordova.plugins.customPlugin.coolMethod("消息",function sucess() {
+
+
+        } ,function error() {
+
+        });
+    }
+
+</script>
+</head>
+<body>
+
+<div style="position: absolute;top: 40px">
+    <button onclick="testClik()">这是按钮</button>
+</div>
+</body>
+</html>
